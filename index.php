@@ -144,26 +144,15 @@ $adverts = [
 </main>
 
 <footer class="main-footer">
-    <nav class="nav">
-        <ul class="nav__list container">            
-            <li class="nav__item">
-                <a href="all-lots.html">Доски и лыжи</a>
-            </li>
-            <li class="nav__item">
-                <a href="all-lots.html">Крепления</a>
-            </li>
-            <li class="nav__item">
-                <a href="all-lots.html">Ботинки</a>
-            </li>
-            <li class="nav__item">
-                <a href="all-lots.html">Одежда</a>
-            </li>
-            <li class="nav__item">
-                <a href="all-lots.html">Инструменты</a>
-            </li>
-            <li class="nav__item">
-                <a href="all-lots.html">Разное</a>
-            </li>
+    <nav class="nav">        
+        <ul class="nav__list container"> 
+            <?php   $index = 0;
+                    $catCount = count($categories);
+                    while ($index < $catCount) { ?>           
+                <li class="nav__item">
+                    <a href="all-lots.html"><?=$categories[$index];?></a>
+                </li>
+            <?php $index++; } ?>
         </ul>
     </nav>
     <div class="main-footer__bottom container">
