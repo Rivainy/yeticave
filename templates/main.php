@@ -41,7 +41,7 @@
                             <span class="lot__cost"><?= $value['price']; ?><b class="rub">р</b></span>
                         </div>
                         <div class="lot__timer timer">
-
+                            <?= date("H:i", (strtotime("tomorrow 00:00:00") - strtotime("now"))) ?>
                         </div>
                     </div>
                 </div>

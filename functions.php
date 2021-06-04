@@ -17,6 +17,6 @@ function include_template($file, $arr) {
     else {$content = null;}
 
     return $content;
-}
+} 
 
 ?>
